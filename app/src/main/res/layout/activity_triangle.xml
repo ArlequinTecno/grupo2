@@ -5,26 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/divider"
-    tools:context=".ui.rectangle.RectangleActivity">
+    tools:context=".ui.triangle.TriangleActivity">
 
     <ImageView
-        android:id="@+id/imageView_Rectangle"
-        android:layout_width="310dp"
-        android:layout_height="425dp"
-        android:layout_marginTop="32dp"
-        android:contentDescription="@string/rectangle_image"
+        android:id="@+id/imageView_Triangle"
+        android:layout_width="283dp"
+        android:layout_height="255dp"
+        android:layout_marginTop="76dp"
+        android:contentDescription="@string/triangle_image"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/rectangle" />
+        app:srcCompat="@drawable/triangulo" />
 
     <TextView
-        android:id="@+id/textView_rectangle"
+        android:id="@+id/textView_triangle"
         style="@style/textViewTitle.H1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="@string/rectangle"
+        android:text="@string/triangle"
         android:textColor="@color/black"
         android:textSize="34sp"
         android:textStyle="bold"
@@ -53,12 +53,12 @@
         app:layout_constraintTop_toTopOf="@+id/guideline2">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/Input_Edit_Text_Width"
+            android:id="@+id/Input_Edit_Text_Base"
             android:layout_width="match_parent"
             android:layout_height="68dp"
             android:background="@drawable/sheet_bottom"
             android:backgroundTint="@color/primary_light"
-            android:hint="@string/width"
+            android:hint="@string/base"
             android:inputType="number"
             android:textColorHint="#4E342E"
             android:textSize="20sp"
@@ -86,12 +86,12 @@
         app:layout_constraintTop_toTopOf="@+id/guideline2">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/Input_Edit_Text_Length"
+            android:id="@+id/Input_Edit_Text_Height"
             android:layout_width="match_parent"
             android:layout_height="68dp"
             android:background="@drawable/sheet_bottom"
             android:backgroundTint="@color/primary_light"
-            android:hint="@string/length"
+            android:hint="@string/altura"
             android:inputType="number"
             android:textColorHint="#4E342E"
             android:textSize="20sp"
@@ -119,7 +119,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="16dp"
-        android:text="@string/infoRectangle"
+        android:text="@string/infoTriangle"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
@@ -127,23 +127,23 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/rectangle_perimeter_formula"
+        android:id="@+id/triangle_perimeter_formula"
         style="@style/textViewTitle.H2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
-        android:text="@string/perimeter_rectangle"
+        android:text="@string/perimeter_triangle"
         app:layout_constraintBottom_toTopOf="@+id/textView_result"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/rectangle_area_formula"
+        android:id="@+id/triangle_area_formula"
         style="@style/textViewTitle.H2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
-        android:text="@string/area_rectangle"
+        android:text="@string/area_triangle"
         app:layout_constraintBottom_toTopOf="@+id/textView_result"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline3" />
